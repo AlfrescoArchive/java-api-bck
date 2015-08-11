@@ -14,6 +14,7 @@
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
         <alfresco.platform.version>5.0.1</alfresco.platform.version>
+        <docflex.version>1.6.1</docflex.version>
     </properties>
     <packaging>jar</packaging>
     <dependencies>
@@ -42,7 +43,15 @@
         <artifactId>share</artifactId>
         <version>${alfresco.platform.version}</version>
         <classifier>classes</classifier>
-      </dependency>      
+      </dependency>
+      <!-- Downloads the docflex license -->
+      <dependency>
+        <groupId>com.docflex</groupId>
+        <artifactId>docflex-alfresco-license</artifactId>
+        <version>1.0</version>
+        <type>license</type>
+        <scope>provided</scope>
+      </dependency>
     </dependencies>
     <build>
         <pluginManagement>
@@ -69,6 +78,25 @@
                   <overWriteReleases>false</overWriteReleases>
                   <overWriteSnapshots>true</overWriteSnapshots>
                   <excludeTransitive>true</excludeTransitive>                
+                </configuration>
+              </execution>
+              <!-- Unzips the docflex/javadoc doclet -->
+              <execution>
+                <id>unpack-docflex</id>
+                <inherited>false</inherited>
+                <goals>
+                    <goal>unpack</goal>
+                </goals>
+                <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>com.docflex</groupId>
+                            <artifactId>docflex-javadoc</artifactId>
+                            <version>${docflex.version}</version>
+                            <type>zip</type>
+                        </artifactItem>
+                    </artifactItems>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
                 </configuration>
               </execution>
             </executions>
@@ -106,7 +134,36 @@
                 </fileset>
               </filesets>
             </configuration>
-          </plugin>      
+          </plugin>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+                <doclet>com.docflex.javadoc.Doclet</doclet>
+                <docletPath>${project.build.directory}/docflex-javadoc-${docflex.version}/lib/docflex-javadoc.jar</docletPath>
+                <additionalparam>
+                    -license ${settings.localRepository}/com/docflex/docflex-alfresco-license/1.0/docflex-alfresco-license-1.0.license
+                    -template ${project.build.directory}/docflex-javadoc-${docflex.version}/templates/JavadocPro/FramedDoc.tpl
+                    -nodialog
+                    -launchviewer=false
+                    -p:filter.byAnns.include.classes=org.alfresco.api.AlfrescoPublicApi
+                    -p:docTitle "Alfresco ${project.version} Public API"
+                    -p:windowTitle "Alfresco ${project.version} Public API"
+                </additionalparam>
+                <includeDependencySources>true</includeDependencySources>
+                <includeTransitiveDependencySources>true</includeTransitiveDependencySources>
+                <dependencySourceIncludes>
+                    <dependencySourceInclude>org.alfresco:*</dependencySourceInclude>
+                </dependencySourceIncludes>
+                <dependencySourceExcludes>
+                    <dependencySourceExclude>org.alfresco:alfresco-xmlfactory</dependencySourceExclude>
+                    <dependencySourceExclude>org.alfresco:alfresco-text-gen</dependencySourceExclude>
+                </dependencySourceExcludes>
+                <excludePackageNames>org.customer,org.apache</excludePackageNames>
+                <!-- Uncomment to generate javadoc on Java 8
+                <additionalparam>-Xdoclint:none</additionalparam>
+                -->
+            </configuration>
+          </plugin>
         </plugins> 
     </build> 
 </project>
