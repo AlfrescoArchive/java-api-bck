@@ -13,25 +13,36 @@
     <name>Alfresco Java Api BCK aggregator</name>
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
-        <platform.version>5.0.d</platform.version>
+        <alfresco.platform.version>5.0.1</alfresco.platform.version>
     </properties>
     <packaging>jar</packaging>
     <dependencies>
       <dependency>
         <groupId>org.alfresco</groupId>
         <artifactId>alfresco-core</artifactId>
-        <version>${platform.version}</version>
+        <version>${alfresco.platform.version}</version>
       </dependency>
       <dependency>
         <groupId>org.alfresco</groupId>
         <artifactId>alfresco-data-model</artifactId>
-        <version>${platform.version}</version>
+        <version>${alfresco.platform.version}</version>
       </dependency>      
       <dependency>
         <groupId>org.alfresco</groupId>
         <artifactId>alfresco-repository</artifactId>
-        <version>${platform.version}</version>
+        <version>${alfresco.platform.version}</version>
       </dependency>
+      <dependency>
+         <groupId>org.alfresco</groupId>
+         <artifactId>alfresco-remote-api</artifactId>
+         <version>${alfresco.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.alfresco</groupId>
+        <artifactId>share</artifactId>
+        <version>${alfresco.platform.version}</version>
+        <classifier>classes</classifier>
+      </dependency>      
     </dependencies>
     <build>
         <pluginManagement>
