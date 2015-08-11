@@ -9,7 +9,7 @@
         <version>6</version>
     </parent>
     <artifactId>public-java-api</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${alfresco.platform.version}</version>
     <name>Alfresco Java Api BCK aggregator</name>
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
