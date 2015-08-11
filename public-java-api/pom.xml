@@ -13,7 +13,9 @@
     <name>Alfresco Java Api BCK aggregator</name>
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
-        <alfresco.platform.version>5.0.1</alfresco.platform.version>
+        <alfresco.platform.version>5.1-BF-SNAPSHOT</alfresco.platform.version>
+        <alfresco.share.version>${alfresco.platform.version}</alfresco.share.version>        
+        <alfresco.core.version>${alfresco.platform.version}</alfresco.core.version>        
         <comparison.version>5.0.1</comparison.version>
         <docflex.version>1.6.1</docflex.version>
     </properties>
@@ -22,7 +24,7 @@
       <dependency>
         <groupId>org.alfresco</groupId>
         <artifactId>alfresco-core</artifactId>
-        <version>${alfresco.platform.version}</version>
+        <version>${alfresco.core.version}</version>
       </dependency>
       <dependency>
         <groupId>org.alfresco</groupId>
@@ -42,7 +44,7 @@
       <dependency>
         <groupId>org.alfresco</groupId>
         <artifactId>share</artifactId>
-        <version>${alfresco.platform.version}</version>
+        <version>${alfresco.share.version}</version>
         <classifier>classes</classifier>
       </dependency>
       <!-- Downloads the docflex license -->
@@ -74,7 +76,7 @@
                 <configuration>
                   <includes>org/alfresco/**/*.java</includes>
                   <classifier>sources</classifier>
-                  <failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
+                  <failOnMissingClassifierArtifact>true</failOnMissingClassifierArtifact>
                   <outputDirectory>${project.build.directory}/sources</outputDirectory>
                   <overWriteReleases>false</overWriteReleases>
                   <overWriteSnapshots>true</overWriteSnapshots>
