@@ -78,6 +78,7 @@
                   <classifier>sources</classifier>
                   <failOnMissingClassifierArtifact>true</failOnMissingClassifierArtifact>
                   <outputDirectory>${project.build.directory}/sources</outputDirectory>
+                  <excludeScope>provided</excludeScope>
                   <overWriteReleases>false</overWriteReleases>
                   <overWriteSnapshots>true</overWriteSnapshots>
                   <excludeTransitive>true</excludeTransitive>                
