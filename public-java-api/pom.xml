@@ -14,8 +14,8 @@
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
         <alfresco.platform.version>5.1-BF-SNAPSHOT</alfresco.platform.version>
-        <alfresco.share.version>${alfresco.platform.version}</alfresco.share.version>        
-        <alfresco.core.version>${alfresco.platform.version}</alfresco.core.version>        
+        <alfresco.share.version>5.1-SNAPSHOT</alfresco.share.version>
+        <alfresco.core.version>5.1.3-SNAPSHOT</alfresco.core.version>
         <comparison.version>5.0.1</comparison.version>
         <docflex.version>1.6.1</docflex.version>
     </properties>
