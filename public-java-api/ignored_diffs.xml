@@ -1,0 +1,8 @@
+<differences>
+    <difference>
+        <className>**/ServiceRegistry</className>
+        <field>**</field>
+        <method>* get*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+</differences>

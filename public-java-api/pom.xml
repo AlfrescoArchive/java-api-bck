@@ -173,8 +173,10 @@
             <artifactId>clirr-maven-plugin</artifactId>
             <version>2.6.1</version>
             <configuration>
-              <!-- Compare the current code against version 5.0.1 -->
               <comparisonVersion>${comparison.version}</comparisonVersion>
+              <!-- Take a look at http://clirr.sourceforge.net/clirr-core/exegesis.html for
+                    the meaning of the differences -->
+              <ignoredDifferencesFile>ignored_diffs.xml</ignoredDifferencesFile>
             </configuration>
           </plugin>          
         </plugins> 
