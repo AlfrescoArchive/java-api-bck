@@ -1,8 +1,21 @@
 <differences>
+    <!-- We've intentionally added new getter methods to ServiceRegistry -->
     <difference>
         <className>**/ServiceRegistry</className>
         <field>**</field>
         <method>* get*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <!-- getBlocklist method was added to fix MNT-13731, product provides implementation -->
+    <difference>
+        <className>org/alfresco/repo/content/transform/TransformerConfig</className>
+        <method>* getBlacklist*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <!-- listSiteMemberships method was added for performance reasons, product provides implementation -->
+    <difference>
+        <className>org/alfresco/service/cmr/site/SiteService</className>
+        <method>* listSiteMemberships*</method>
         <differenceType>7012</differenceType>
     </difference>
 </differences>
