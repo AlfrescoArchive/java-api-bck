@@ -2,8 +2,12 @@
 
 *.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+alfresco.log
+
+# Eclipse
+.settings
+.project
+.classpath
 
 # Package Files #
 *.jar
@@ -20,6 +24,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*

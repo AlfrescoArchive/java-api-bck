@@ -12,6 +12,7 @@
     <name>Alfresco Java Api BCK parent</name>  
     <modules>
       <module>public-java-api</module>
+      <module>public-spring-beans</module>
     </modules>
     <build>
       <plugins>
