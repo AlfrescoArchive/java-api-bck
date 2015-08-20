@@ -2,7 +2,7 @@
 
 *.class
 
-alfresco.log
+alfresco.log*
 
 # Eclipse
 .settings
