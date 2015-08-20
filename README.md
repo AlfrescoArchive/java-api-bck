@@ -1,2 +1,2 @@
 # java-api-bck
-Repository for public Java API BCK tests
+Repository for the Public Java API Backwards Compatibility Kit (BCK).
