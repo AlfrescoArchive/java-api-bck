@@ -5,15 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.alfresco</groupId>
-        <artifactId>alfresco-super-pom</artifactId>
-        <version>6</version>
+        <artifactId>java-bck-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>public-java-api</artifactId>
-    <version>${alfresco.platform.version}</version>
     <name>Alfresco Java Api BCK aggregator</name>
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
-        <alfresco.platform.version>5.1-BF-SNAPSHOT</alfresco.platform.version>
+        <alfresco.platform.version>5.1-SNAPSHOT</alfresco.platform.version>
         <alfresco.share.version>5.1-SNAPSHOT</alfresco.share.version>
         <alfresco.core.version>5.1.3-SNAPSHOT</alfresco.core.version>
         <comparison.version>5.0.1</comparison.version>

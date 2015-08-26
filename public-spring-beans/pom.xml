@@ -3,18 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
    
+   <parent>
+      <groupId>org.alfresco</groupId>
+      <artifactId>java-bck-parent</artifactId>
+      <version>1.0-SNAPSHOT</version>
+   </parent>
    <artifactId>public-spring-beans-bck</artifactId>
-   <version>1.0-SNAPSHOT</version>
    
    <name>Public Spring Beans BCK</name>
    <packaging>jar</packaging>
    <description>Performs tests to ensure spring context is backwards compatible</description>
-
-   <parent>
-      <groupId>org.alfresco</groupId>
-      <artifactId>alfresco-super-pom</artifactId>
-      <version>6</version>
-   </parent>
 
    <dependencies>   
       <dependency>
