@@ -9,7 +9,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>public-java-api</artifactId>
-    <name>Alfresco Java Api BCK aggregator</name>
+    <version>5.1-SNAPSHOT</version>
+    <name>Alfresco Public Java API</name>
     <description>Collects the various artifacts and merges them into one jar</description>     
     <properties>
         <alfresco.platform.version>5.1-SNAPSHOT</alfresco.platform.version>
@@ -145,6 +146,17 @@
             </configuration>
           </plugin>
           <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+              <archive>
+                <manifestEntries>
+                  <Specification-Version>5</Specification-Version>
+                </manifestEntries>
+              </archive>
+            </configuration>
+          </plugin>
+          <plugin>
             <artifactId>maven-javadoc-plugin</artifactId>
             <configuration>
                 <doclet>com.docflex.javadoc.Doclet</doclet>
@@ -155,8 +167,8 @@
                     -nodialog
                     -launchviewer=false
                     -p:filter.byAnns.include.classes=org.alfresco.api.AlfrescoPublicApi
-                    -p:docTitle "Alfresco ${project.version} Public API"
-                    -p:windowTitle "Alfresco ${project.version} Public API"
+                    -p:docTitle "Alfresco ${alfresco.platform.version} Public Java API"
+                    -p:windowTitle "Alfresco ${alfresco.platform.version} Public Java API"
                 </additionalparam>
                 <includeDependencySources>true</includeDependencySources>
                 <includeTransitiveDependencySources>true</includeTransitiveDependencySources>
