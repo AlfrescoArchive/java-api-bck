@@ -9,7 +9,7 @@
     <artifactId>java-bck-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Alfresco Java Api BCK parent</name>  
+    <name>Alfresco Java API BCK parent</name>  
     <modules>
       <module>public-java-api</module>
       <module>public-spring-beans</module>
