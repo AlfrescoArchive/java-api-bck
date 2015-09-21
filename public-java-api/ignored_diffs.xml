@@ -18,4 +18,10 @@
         <method>* listSiteMemberships*</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- getLock method was added for MNT-14526, product provides implementation -->
+    <difference>
+        <className>org/alfresco/repo/lock/JobLockService</className>
+        <method>* getLock*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
