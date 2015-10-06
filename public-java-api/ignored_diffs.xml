@@ -24,4 +24,16 @@
         <method>* getLock*</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- getTargetAssocsByPropertyValue was added for MNT-14504 for performance reasons, product provides implementation -->
+    <difference>
+        <className>org/alfresco/service/cmr/repository/NodeService</className>
+        <method>* getTargetAssocsByPropertyValue*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <!-- additional getRootCategories was added for MNT-12240 for performance reasons, product provides implementation -->
+    <difference>
+        <className>org/alfresco/service/cmr/search/CategoryService</className>
+        <method>* getRootCategories*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
