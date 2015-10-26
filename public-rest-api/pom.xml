@@ -71,6 +71,9 @@
                                     <contains text="public interface" casesensitive="yes"/>
                                 </and>
                                 <contains text="package org.alfresco.rest.api.model;" casesensitive="yes"/>
+                                <contains text="package org.alfresco.rest.workflow.api;" casesensitive="yes"/>
+                                <contains text="package org.alfresco.rest.workflow.api.model;" casesensitive="yes"/>
+                                <filename name="**/package-info.java"/>
                             </or>
                         </fileset>
                     </copy>
