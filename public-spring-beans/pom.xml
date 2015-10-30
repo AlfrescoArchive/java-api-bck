@@ -11,14 +11,13 @@
    <artifactId>public-spring-beans-bck</artifactId>
    
    <name>Public Spring Beans BCK</name>
-   <packaging>jar</packaging>
    <description>Performs tests to ensure spring context is backwards compatible</description>
 
    <dependencies>   
       <dependency>
          <groupId>org.alfresco</groupId>
          <artifactId>alfresco-repository</artifactId>
-         <version>5.1-SNAPSHOT</version>
+         <version>${alfresco.platform.version}</version>
       </dependency>
       <dependency>
          <groupId>junit</groupId>

@@ -10,17 +10,17 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Alfresco Java API BCK parent</name>  
+
+    <properties>
+        <alfresco.platform.version>5.1-SNAPSHOT</alfresco.platform.version>
+        <alfresco.share.version>5.1-SNAPSHOT</alfresco.share.version>
+        <alfresco.core.version>5.4</alfresco.core.version>
+        <comparison.version>5.0.1</comparison.version>
+    </properties>
+
     <modules>
       <module>public-java-api</module>
       <module>public-rest-api</module>
       <module>public-spring-beans</module>
     </modules>
-    <build>
-      <plugins>
-      </plugins>
-    </build>
-    <reporting>
-      <plugins>
-      </plugins>
-    </reporting>
 </project>

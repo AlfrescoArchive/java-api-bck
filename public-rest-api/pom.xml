@@ -12,12 +12,6 @@
     <version>5.1-SNAPSHOT</version>
     <name>Alfresco Public Rest API</name>
     <description>Collects definitions from the remote-api project</description>
-    <properties>
-        <alfresco.platform.version>5.1-SNAPSHOT</alfresco.platform.version>
-        <comparison.version>5.0.1</comparison.version>
-        <docflex.version>1.6.1</docflex.version>
-    </properties>
-    <packaging>jar</packaging>
     <dependencies>
       <dependency>
          <groupId>org.alfresco</groupId>
@@ -25,6 +19,7 @@
          <version>${alfresco.platform.version}</version>
       </dependency>
     </dependencies>
+
     <build>
       <plugins>
          <plugin>
