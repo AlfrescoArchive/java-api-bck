@@ -36,4 +36,13 @@
         <method>* getRootCategories*</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- removed the 2 share classes from the public API for ACE-4558 -->
+    <difference>
+    	  <className>org/alfresco/web/evaluator/Evaluator</className>
+    	  <differenceType>8001</differenceType>
+    </difference>
+    <difference>
+    	  <className>org/alfresco/web/evaluator/BaseEvaluator</className>
+    	  <differenceType>8001</differenceType>
+    </difference>
 </differences>
