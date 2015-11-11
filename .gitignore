@@ -1,4 +1,5 @@
 /public-java-api/src/main/java
+/public-rest-api/src/main/java
 
 *.class
 

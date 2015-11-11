@@ -36,12 +36,6 @@
          <artifactId>alfresco-remote-api</artifactId>
          <version>${alfresco.platform.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.alfresco</groupId>
-        <artifactId>share</artifactId>
-        <version>${alfresco.share.version}</version>
-        <classifier>classes</classifier>
-      </dependency>
       <!-- Downloads the docflex license -->
       <dependency>
         <groupId>com.docflex</groupId>
