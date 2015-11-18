@@ -45,4 +45,10 @@
     	  <className>org/alfresco/web/evaluator/BaseEvaluator</className>
     	  <differenceType>8001</differenceType>
     </difference>
+    <!-- Added new method to public API for ACE-4421 -->
+    <difference>
+        <className>org/alfresco/repo/policy/BehaviourFilter</className>
+        <method>* disableBehaviour(org.alfresco.service.namespace.QName, boolean)</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
