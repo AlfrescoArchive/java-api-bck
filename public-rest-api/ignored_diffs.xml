@@ -1,8 +1,51 @@
 <differences>
-	<!-- updatePerson was removed because its unused RA-566-->
+    <!-- updatePerson was removed because its unused RA-566-->
     <difference>
         <className>org/alfresco/rest/api/People</className>
         <method>* updatePerson*</method>
         <differenceType>7002</differenceType>
     </difference>
+    
+    <!-- Temporary exclusions for File Folder API -->
+    <difference>
+        <className>org/alfresco/rest/api/Nodes</className>
+        <method>*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Document</className>
+        <method>Document*</method>
+        <differenceType>7004</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Document</className>
+        <method>Document*</method>
+        <differenceType>7002</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Folder</className>
+        <method>Folder*</method>
+        <differenceType>7004</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Folder</className>
+        <method>Folder*</method>
+        <differenceType>7002</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Node</className>
+        <method>Node*</method>
+        <differenceType>7004</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Node</className>
+        <method>Node*</method>
+        <differenceType>7002</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Node</className>
+        <method>* mapProperties*</method>
+        <differenceType>7002</differenceType>
+    </difference>
+    
 </differences>
