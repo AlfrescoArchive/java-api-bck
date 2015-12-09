@@ -276,6 +276,13 @@ public class PublicBeansBCKTest
     }
     
     @Test
+    public void testModules()
+    {
+        // ensure the "module.baseComponent" is present
+        assertTrue(beanDefinitionNames.contains("module.baseComponent"));
+    }
+
+    @Test
     public void testImporterBeans()
     {
         // ensure the required setters are still present
