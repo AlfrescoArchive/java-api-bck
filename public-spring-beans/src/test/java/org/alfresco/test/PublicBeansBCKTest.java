@@ -281,7 +281,14 @@ public class PublicBeansBCKTest
         // ensure the "module.baseComponent" is present
         assertTrue(beanDefinitionNames.contains("module.baseComponent"));
     }
-
+    
+    @Test
+    public void testWebscripts()
+    {
+        // ensure that "webscript" parent is present
+        assertTrue(beanDefinitionNames.contains("webscript"));
+    }
+    
     @Test
     public void testImporterBeans()
     {
