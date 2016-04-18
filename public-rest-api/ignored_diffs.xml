@@ -48,4 +48,29 @@
         <differenceType>7002</differenceType>
     </difference>
     
+    <!-- Temporary exclusions for Sites REST API -->
+    <difference>
+        <className>org/alfresco/rest/api/Sites</className>
+        <method>*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/FavouriteSite</className>
+        <differenceType>4001</differenceType>
+        <to>org/alfresco/rest/api/model/Site</to>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/FavouriteSite</className>
+        <differenceType>5001</differenceType>
+        <to>org/alfresco/rest/api/model/SiteImpl</to>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Site</className>
+        <differenceType>2001</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/SiteImpl</className>
+        <differenceType>8001</differenceType>
+    </difference>
+    
 </differences>
