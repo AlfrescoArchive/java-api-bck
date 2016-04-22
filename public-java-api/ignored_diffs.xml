@@ -51,4 +51,16 @@
         <method>* disableBehaviour(org.alfresco.service.namespace.QName, boolean)</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- setMetadataExtracterConfig method was added to fix MNT-15219 -->
+    <difference>
+        <className>org/alfresco/repo/content/transform/AbstractContentTransformer2</className>
+        <method>* setMetadataExtracterConfig*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <!-- setMetadataExtracterConfig method was added to fix MNT-15219 -->
+    <difference>
+        <className>org/alfresco/repo/content/metadata/AbstractMappingMetadataExtracter</className>
+        <method>* setMetadataExtracterConfig*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
