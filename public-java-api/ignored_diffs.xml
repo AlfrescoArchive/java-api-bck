@@ -63,4 +63,10 @@
         <method>* setMetadataExtracterConfig*</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- setInheritParentPermissions method was added to fix MNT-15368 -->
+    <difference>
+        <className>org/alfresco/service/cmr/security/PermissionService</className>
+        <method>* setInheritParentPermissions*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
