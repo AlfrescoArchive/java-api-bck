@@ -69,4 +69,10 @@
         <method>* setInheritParentPermissions*</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- Added new variation of list method for RA-1053 -->
+    <difference>
+        <className>org/alfresco/service/cmr/security/FileFolderService</className>
+        <method>* list*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
