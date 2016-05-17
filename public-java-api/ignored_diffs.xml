@@ -71,7 +71,7 @@
     </difference>
     <!-- Added new variation of list method for RA-1053 -->
     <difference>
-        <className>org/alfresco/service/cmr/security/FileFolderService</className>
+        <className>org/alfresco/service/cmr/model/FileFolderService</className>
         <method>org.alfresco.query.PagingResults list(org.alfresco.service.cmr.repository.NodeRef, java.util.Set, java.util.Set, java.util.List, java.util.List, org.alfresco.query.PagingRequest)</method>
         <differenceType>7012</differenceType>
     </difference>
