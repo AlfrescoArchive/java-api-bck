@@ -75,4 +75,10 @@
         <method>org.alfresco.query.PagingResults list(org.alfresco.service.cmr.repository.NodeRef, java.util.Set, java.util.Set, java.util.List, java.util.List, org.alfresco.query.PagingRequest)</method>
         <differenceType>7012</differenceType>
     </difference>
+	<!-- getModelByNamespaceUri method added as part of the fix for MNT-14332 -->
+	<difference>
+        <className>org/alfresco/service/cmr/dictionary/DictionaryService</className>
+        <method>* getModelByNamespaceUri*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
