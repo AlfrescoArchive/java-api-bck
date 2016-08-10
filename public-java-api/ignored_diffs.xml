@@ -81,4 +81,10 @@
         <method>* getModelByNamespaceUri*</method>
         <differenceType>7012</differenceType>
     </difference>
+	<!-- Added new variation of lock method for REPO-164 -->
+	<difference>
+        <className>org/alfresco/service/cmr/lock/LockService</className>
+        <method>void lock(org.alfresco.service.cmr.repository.NodeRef, org.alfresco.service.cmr.lock.LockType, int, org.alfresco.repo.lock.mem.Lifetime, boolean)</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
