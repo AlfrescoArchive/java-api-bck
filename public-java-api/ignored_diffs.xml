@@ -90,13 +90,13 @@
     <!-- Added new isLocked method for REPO-1144 -->
     <difference>
           <className>org/alfresco/service/cmr/lock/LockService</className>
-          <method>void isLocked(org.alfresco.service.cmr.repository.NodeRef)</method>
+          <method>boolean isLocked(org.alfresco.service.cmr.repository.NodeRef)</method>
           <differenceType>7012</differenceType>
     </difference>
     <!-- Added new isLockedAndReadOnly method for REPO-1144 -->
     <difference>
           <className>org/alfresco/service/cmr/lock/LockService</className>
-          <method>void isLockedAndReadOnly(org.alfresco.service.cmr.repository.NodeRef)</method>
+          <method>boolean isLockedAndReadOnly(org.alfresco.service.cmr.repository.NodeRef)</method>
           <differenceType>7012</differenceType>
     </difference>
 </differences>
