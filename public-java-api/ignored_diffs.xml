@@ -108,22 +108,22 @@
     <!-- Removed methods as part of cleanup for ACE-1249 -->
         <difference>
           <className>org/alfresco/repo/content/metadata/AbstractMappingMetadataExtracter</className>
-          <method>public long getExtractionTime()</method>
+          <method>long getExtractionTime()</method>
           <differenceType>7002</differenceType>
     </difference>
     <difference>
           <className>org/alfresco/repo/content/metadata/AbstractMappingMetadataExtracter</className>
-          <method>public double getReliability(java.lang.String)</method>
+          <method>double getReliability(java.lang.String)</method>
           <differenceType>7002</differenceType>
     </difference>
     <difference>
           <className>org/alfresco/repo/content/metadata/MetadataExtracter</className>
-          <method>public long getExtractionTime()</method>
+          <method>long getExtractionTime()</method>
           <differenceType>7002</differenceType>
     </difference>
     <difference>
           <className>org/alfresco/repo/content/metadata/MetadataExtracter</className>
-          <method>public double getReliability(java.lang.String)</method>
+          <method>double getReliability(java.lang.String)</method>
           <differenceType>7002</differenceType>
     </difference>
 </differences>
