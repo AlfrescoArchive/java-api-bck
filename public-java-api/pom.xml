@@ -17,21 +17,6 @@
     </properties>
     <dependencies>
       <dependency>
-        <groupId>org.alfresco</groupId>
-        <artifactId>alfresco-core</artifactId>
-        <version>${alfresco.core.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.alfresco</groupId>
-        <artifactId>alfresco-data-model</artifactId>
-        <version>${alfresco.data-model.version}</version>
-      </dependency>      
-      <dependency>
-        <groupId>org.alfresco</groupId>
-        <artifactId>alfresco-repository</artifactId>
-        <version>${alfresco.platform.version}</version>
-      </dependency>
-      <dependency>
          <groupId>org.alfresco</groupId>
          <artifactId>alfresco-remote-api</artifactId>
          <version>${alfresco.platform.version}</version>

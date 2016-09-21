@@ -12,11 +12,7 @@
     <name>Alfresco Java API BCK parent</name>
 
     <properties>
-        <!-- The next three properties should be changed together to correspond to one platform version
-             or overridden by bamboo build -->
         <alfresco.platform.version>5.1.2-SNAPSHOT</alfresco.platform.version>
-        <alfresco.core.version>6.1</alfresco.core.version>
-        <alfresco.data-model.version>${alfresco.platform.version}</alfresco.data-model.version>
         <comparison.version>5.0.1</comparison.version>
     </properties>
 
