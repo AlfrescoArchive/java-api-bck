@@ -2,18 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   
+
    <parent>
       <groupId>org.alfresco</groupId>
       <artifactId>java-bck-parent</artifactId>
       <version>1.0-SNAPSHOT</version>
    </parent>
    <artifactId>public-spring-beans-bck</artifactId>
-   
+
    <name>Public Spring Beans BCK</name>
    <description>Performs tests to ensure spring context is backwards compatible</description>
 
-   <dependencies>   
+   <dependencies>
       <dependency>
          <groupId>org.alfresco</groupId>
          <artifactId>alfresco-repository</artifactId>
@@ -29,6 +29,11 @@
          <groupId>com.h2database</groupId>
          <artifactId>h2</artifactId>
          <version>1.4.182</version>
+      </dependency>
+      <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>javax.servlet-api</artifactId>
+         <version>3.0.1</version>
       </dependency>
    </dependencies>
 
