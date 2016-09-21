@@ -24,7 +24,7 @@
       <dependency>
         <groupId>org.alfresco</groupId>
         <artifactId>alfresco-data-model</artifactId>
-        <version>${alfresco.platform.version}</version>
+        <version>${alfresco.data-model.version}</version>
       </dependency>      
       <dependency>
         <groupId>org.alfresco</groupId>
