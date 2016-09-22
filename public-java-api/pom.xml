@@ -35,6 +35,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.10</version>
             <executions>
               <execution>
                 <id>unpack-dependencies</id>
@@ -43,6 +44,23 @@
                   <goal>unpack-dependencies</goal>
                 </goals>
                 <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                            <groupId>org.alfresco</groupId>
+                            <artifactId>alfresco-repository</artifactId>
+                            <includes>org/alfresco/**/*.java</includes>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>org.alfresco</groupId>
+                            <artifactId>alfresco-data-model</artifactId>
+                            <includes>org/alfresco/**/*.java</includes>
+                        </artifactItem>
+                        <artifactItem>
+                            <groupId>org.alfresco</groupId>
+                            <artifactId>alfresco-core</artifactId>
+                            <includes>org/alfresco/**/*.java</includes>
+                        </artifactItem>
+                    </artifactItems>
                   <includes>org/alfresco/**/*.java</includes>
                   <classifier>sources</classifier>
                   <failOnMissingClassifierArtifact>true</failOnMissingClassifierArtifact>
