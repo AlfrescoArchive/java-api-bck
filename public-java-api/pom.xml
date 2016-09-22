@@ -44,23 +44,7 @@
                   <goal>unpack-dependencies</goal>
                 </goals>
                 <configuration>
-                    <artifactItems>
-                        <artifactItem>
-                            <groupId>org.alfresco</groupId>
-                            <artifactId>alfresco-repository</artifactId>
-                            <includes>org/alfresco/**/*.java</includes>
-                        </artifactItem>
-                        <artifactItem>
-                            <groupId>org.alfresco</groupId>
-                            <artifactId>alfresco-data-model</artifactId>
-                            <includes>org/alfresco/**/*.java</includes>
-                        </artifactItem>
-                        <artifactItem>
-                            <groupId>org.alfresco</groupId>
-                            <artifactId>alfresco-core</artifactId>
-                            <includes>org/alfresco/**/*.java</includes>
-                        </artifactItem>
-                    </artifactItems>
+                  <includeArtifactIds>alfresco-repository,alfresco-data-model,alfresco-core,alfresco-remote-api</includeArtifactIds>
                   <includes>org/alfresco/**/*.java</includes>
                   <classifier>sources</classifier>
                   <failOnMissingClassifierArtifact>true</failOnMissingClassifierArtifact>
@@ -68,7 +52,7 @@
                   <excludeScope>provided</excludeScope>
                   <overWriteReleases>false</overWriteReleases>
                   <overWriteSnapshots>true</overWriteSnapshots>
-                  <excludeTransitive>true</excludeTransitive>
+                  <excludeTransitive>false</excludeTransitive>
                 </configuration>
               </execution>
               <!-- Unzips the docflex/javadoc doclet -->
