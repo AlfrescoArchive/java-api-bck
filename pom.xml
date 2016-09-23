@@ -21,4 +21,17 @@
       <module>public-rest-api</module>
       <module>public-spring-beans</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Import all the dependency management from a Alfresco parent pom -->
+            <dependency>
+                <groupId>org.alfresco</groupId>
+                <artifactId>alfresco-parent</artifactId>
+                <version>${alfresco.platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
