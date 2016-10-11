@@ -105,6 +105,12 @@
           <method>boolean isLockedAndReadOnly(org.alfresco.service.cmr.repository.NodeRef)</method>
           <differenceType>7012</differenceType>
     </difference>
+    <!-- SEARCH-194 Added for highlighting -->
+    <difference>
+          <className>org/alfresco/service/cmr/search/ResultSetSPI</className>
+          <method>* getHighlighting()</method>
+          <differenceType>7012</differenceType>
+    </difference>
     <!-- Removed methods as part of cleanup for ACE-1249 -->
         <difference>
           <className>org/alfresco/repo/content/metadata/AbstractMappingMetadataExtracter</className>
