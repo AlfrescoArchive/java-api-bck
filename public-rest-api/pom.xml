@@ -18,6 +18,13 @@
          <artifactId>alfresco-remote-api</artifactId>
          <version>${alfresco.platform.version}</version>
       </dependency>
+      <!-- Need to include javax.servlet-api as it has scope 'provided' in the platform's pom -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
+      </dependency>
     </dependencies>
 
     <build>
