@@ -5,7 +5,12 @@
         <method>* updatePerson*</method>
         <differenceType>7002</differenceType>
     </difference>
-    
+    <difference>
+        <className>org/alfresco/rest/api/People</className>
+        <method>* create*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+
     <!-- Temporary exclusions for File Folder API -->
     <difference>
         <className>org/alfresco/rest/api/Nodes</className>
@@ -47,7 +52,7 @@
         <method>* mapProperties*</method>
         <differenceType>7002</differenceType>
     </difference>
-    
+
     <!-- Temporary exclusions for Sites REST API -->
     <difference>
         <className>org/alfresco/rest/api/Sites</className>
@@ -72,5 +77,5 @@
         <className>org/alfresco/rest/api/model/SiteImpl</className>
         <differenceType>8001</differenceType>
     </difference>
-    
+
 </differences>
