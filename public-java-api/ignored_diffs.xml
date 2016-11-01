@@ -132,4 +132,10 @@
           <method>double getReliability(java.lang.String)</method>
           <differenceType>7002</differenceType>
     </difference>
+    <!-- Removed redundancy method for MNT-15024 -->
+    <difference>
+        <className>org/alfresco/repo/content/metadata/AbstractMappingMetadataExtracter</className>
+        <method>void setOverwritePolicy(java.lang.String)</method>
+        <differenceType>7002</differenceType>
+    </difference>
 </differences>
