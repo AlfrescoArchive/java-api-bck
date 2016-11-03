@@ -15,7 +15,11 @@
         <method>* create*</method>
         <differenceType>7012</differenceType>
     </difference>
-
+    <difference>
+        <className>org/alfresco/rest/api/People</className>
+        <method>* getPeople*</method>
+        <differenceType>7012</differenceType>
+    </difference>
     <!-- Temporary exclusions for File Folder API -->
     <difference>
         <className>org/alfresco/rest/api/Nodes</className>
