@@ -2,7 +2,7 @@
     <!-- updatePerson was removed because its unused RA-566-->
     <difference>
         <className>org/alfresco/rest/api/People</className>
-        <method>* updatePerson*</method>
+        <method>* update*</method>
         <differenceType>7002</differenceType>
     </difference>
     <difference>
