@@ -86,5 +86,28 @@
         <className>org/alfresco/rest/api/model/SiteImpl</className>
         <differenceType>8001</differenceType>
     </difference>
-
+    
+    <!-- Deliberate changes for REPO-1661 -->
+    <difference>
+        <className>org/alfresco/rest/api/Comments</className>
+        <method>* getComments*</method>
+        <differenceType>7004</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/People</className>
+        <method>* getPerson*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Comment</className>
+        <method>* getCreatedBy*</method>
+        <to>org.alfresco.rest.api.model.Person</to>
+        <differenceType>7006</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/model/Comment</className>
+        <method>* getModifiedBy*</method>
+        <to>org.alfresco.rest.api.model.Person</to>
+        <differenceType>7006</differenceType>
+    </difference>
 </differences>
