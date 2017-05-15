@@ -120,4 +120,16 @@
         <to>org.alfresco.rest.api.model.Person</to>
         <differenceType>7006</differenceType>
     </difference>
+
+    <!-- APPSREPO-147 -->
+    <difference>
+        <className>org/alfresco/rest/api/Favourites</className>
+        <method>* addFavourite*</method>
+        <differenceType>7012</differenceType>
+    </difference>
+    <difference>
+        <className>org/alfresco/rest/api/Favourites</className>
+        <method>* getFavourite*</method>
+        <differenceType>7012</differenceType>
+    </difference>
 </differences>
