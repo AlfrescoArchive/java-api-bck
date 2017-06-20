@@ -18,7 +18,6 @@
 
     <modules>
       <module>public-java-api</module>
-      <module>public-rest-api</module>
       <module>public-spring-beans</module>
     </modules>
 
