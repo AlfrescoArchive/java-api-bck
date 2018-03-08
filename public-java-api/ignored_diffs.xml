@@ -42,6 +42,12 @@
         <method>* getRootCategories*</method>
         <differenceType>7012</differenceType>
     </difference>
+    <!-- additional findTaggedNodesAndCountByTagName was added for REPO-2247 for performance reasons, product provides implementation -->
+    <difference>
+        <className>org/alfresco/service/cmr/tagging/TaggingService</className>
+        <method>* findTaggedNodesAndCountByTagName*</method>
+        <differenceType>7012</differenceType>
+    </difference>
     <!-- removed the 2 share classes from the public API for ACE-4558 -->
     <difference>
     	  <className>org/alfresco/web/evaluator/Evaluator</className>
